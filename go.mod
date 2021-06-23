@@ -7,5 +7,3 @@ require (
 	github.com/spf13/cobra v0.0.5 // indirect
 	gopkg.in/flanksource/yaml.v3 v3.1.1 // indirect
 )
-
-replace gopkg.in/flanksource/yaml.v3 => /Users/moshe/go/src/github.com/flanksource/yaml

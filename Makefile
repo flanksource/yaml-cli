@@ -45,8 +45,7 @@ docker:
 	docker build ./ -t $(NAME)
 
 .PHONY: test
-test:
-	go test   ./test/... -test.v
+test: fmt vet
 
 .PHONY: lint
 lint: fmt vet

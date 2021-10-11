@@ -13,7 +13,7 @@ vet:
 
 .PHONY: build
 build:
-	go build -ldflags "-X \"main.version=$(VERSION_TAG)\"" -o bin/yaml-cli
+	go build -ldflags "-X \"main.version=$(VERSION_TAG)\"" -o bin/yaml
 
 .PHONY: install
 install: build

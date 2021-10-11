@@ -31,7 +31,7 @@ darwin:
 
 .PHONY: windows
 windows:
-	GOOS=windows GOARCH=amd64 go build -o ./.bin/$(NAME).exe -ldflags "-X \"main.version=$(VERSION_TAG)\""  main.go
+	GOOS=windows GOARCH=amd64 go build -o ./.bin/$(NAME)_windows-amd64.exe -ldflags "-X \"main.version=$(VERSION_TAG)\""  main.go
 
 .PHONY: release
 release: linux darwin windows compress
